@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="30dp"
+    android:paddingBottom="20dp"
+    tools:context=".RegisterrActivity"
+    android:background="@drawable/consulfon">
+
+    <!-- CONTENIDO SUPERIOR -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro"
+                android:fontFamily="@font/heavitas"
+                android:textSize="60sp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completa el formulario"
+                android:fontFamily="@font/heavitas"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Nombre completo -->
+            <EditText
+                android:id="@+id/edtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="  Nombre completo"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="50dp"
+                android:inputType="textPersonName"
+                android:textSize="15sp"
+                android:background="@drawable/editex_custom"/>
+
+            <!-- Correo electrónico -->
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="  Correo electrónico"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp"
+                android:background="@drawable/editex_custom"/>
+
+            <!-- TELÉFONO + EDAD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="  Número telefónico"
+                    android:inputType="phone"
+                    android:textSize="15sp"
+                    android:background="@drawable/editex_custom"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:id="@+id/edtAge"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="  Edad"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:background="@drawable/editex_custom"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <!-- Contraseña -->
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="  Contraseña"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                android:background="@drawable/editex_custom"/>
+
+            <!-- Repite contraseña -->
+            <EditText
+                android:id="@+id/edtRepeatPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="  Repite la contraseña"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                android:background="@drawable/editex_custom"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BOTÓN REGISTRAR -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/gris"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- TEXTO 'YA TIENES CUENTA' -->
+    <TextView
+        android:id="@+id/tv_go_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Ya tienes cuenta? Inicia sesión"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedButton" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">#2DB3DB</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@drawable/rounded_button_blue</item>
+    </style>
+
+    <style name="BlackRoundedButton" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">#000000</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@drawable/rounded_button_black</item>
+    </style>
+    <style name="DatePickerCustomTheme" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="colorAccent">#BABAB9</item> <!-- color botones y selección -->
+        <item name="android:headerBackground">@color/verde</item> <!-- color header -->
+    </style>
+
+
+</resources>

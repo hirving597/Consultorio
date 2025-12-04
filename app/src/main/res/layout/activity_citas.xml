@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CitasActivity"
+    android:background="@drawable/vivitofondo">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige una especialidad"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:fontFamily="@font/heavitas"
+        android:textColor="#000000"/>
+
+    <!-- Fila 1 -->
+
+    <Button
+        android:id="@+id/btnDent"
+        style="@style/RoundedButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:text="Dentista"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toStartOf="@+id/btnPedia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:fontFamily="@font/heavitas"/>
+
+
+    <Button
+        android:id="@+id/btnPedia"
+        style="@style/RoundedButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Pediatría"
+        android:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnDent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:fontFamily="@font/heavitas"/>
+
+    <Button
+        android:id="@+id/btnCardio"
+        style="@style/RoundedButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="Cardiología"
+        android:backgroundTint="@color/btn_color"
+        app:layout_constraintEnd_toStartOf="@+id/btnPsiqui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDent"
+        android:fontFamily="@font/heavitas"/>
+
+    <!-- Fila 3 -->
+    <Button
+        android:id="@+id/btnPsiqui"
+        style="@style/RoundedButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="Psqiuatría"
+        android:backgroundTint="#7EDCDC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnCardio"
+        app:layout_constraintTop_toBottomOf="@id/btnPedia"
+        android:fontFamily="@font/heavitas"/>
+
+    <Button
+        android:id="@+id/btnFisio"
+        style="@style/RoundedButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="Fisioterapia"
+        android:backgroundTint="#598989"
+        app:layout_constraintEnd_toStartOf="@+id/btnGine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCardio"
+        android:fontFamily="@font/heavitas"/>
+
+    <!-- Botón inferior -->
+    <Button
+        android:id="@+id/btnGine"
+        style="@style/RoundedButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="Ginecología"
+        android:backgroundTint="#1D4241"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnFisio"
+        app:layout_constraintTop_toBottomOf="@id/btnPsiqui"
+        android:fontFamily="@font/heavitas"/>
+
+    <Button
+        android:id="@+id/btninicio"
+        style="@style/BlackRoundedButton"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/heavitas"
+        android:text="Volver a inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
