@@ -98,15 +98,6 @@ Cancelación o edición de citas
  ├── adapters/
  └── utils/
 
-📸 Capturas de pantalla (pendiente)
-
-Puedes agregar imágenes aquí más adelante:
-
-![Login](images/login.png)
-![Registro](images/register.png)
-![Menu](images/menu.png)
-![Hacer cita](images/hacer_cita.png)
-![Mis citas](images/mis_citas.png)
 
 📄 Licencia
 
